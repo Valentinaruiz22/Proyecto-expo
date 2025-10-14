@@ -8,8 +8,7 @@ export default function PerfilScreen() {
         <View style={{ backgroundColor: '#3b82f6', padding: 32, alignItems: 'center' }}>
           {/* Foto de perfil circular */}
           <Image
-            source={{ uri: 'https://i.pravatar.cc/300' }} // Imagen de perfil temporal
-
+            source={require('../../assets/images/profile/profile-photo.jpg.jpeg')}
             style={{
               width: 128,
               height: 128,
@@ -24,7 +23,7 @@ export default function PerfilScreen() {
             Valentina Ruiz
           </Text>
           <Text style={{ color: 'white', fontSize: 18 }}>
-            Desarrollador de software
+            Desarrolladora de software
           </Text>
         </View>
 
@@ -45,10 +44,8 @@ export default function PerfilScreen() {
             Sobre mí:
           </Text>
           <Text style={{ color: '#374151', fontSize: 16, lineHeight: 24 }}>
-            Soy un apasionado desarrollador con experiencia en React Native y web development.
-            Me encanta crear aplicaciones móviles intuitivas y atractivas que resuelvan
-            problemas reales. Cuando no estoy programando, disfruto aprendiendo nuevas
-            tecnologías y compartiendo conocimientos con la comunidad de desarrollo.
+            Soy una mujer que estudia Análisis y Desarrollo de Software y me encanta aprender sobre tecnología y programación.
+            Me considero responsable y dedicada, y siempre trato de dar lo mejor de mí en cada proyecto y desafío que se me presenta.
           </Text>
         </View>
       </ScrollView>

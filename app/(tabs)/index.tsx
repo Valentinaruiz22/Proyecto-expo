@@ -20,6 +20,9 @@ export default function HomeScreen() {
       <ThemedView style={styles.titleContainer}>
         <ThemedText type="title">Welcome!</ThemedText>
         <HelloWave />
+        <Link href="/cards" style={styles.cardsLink}>
+          <ThemedText style={styles.cardsLinkText}>Ver Tarjetas →</ThemedText>
+        </Link>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Step 1: Try it</ThemedText>
@@ -80,9 +83,9 @@ export default function HomeScreen() {
 
 const styles = StyleSheet.create({
   titleContainer: {
-    flexDirection: 'row',
+    flexDirection: 'column',
     alignItems: 'center',
-    gap: 8,
+    gap: 16,
   },
   stepContainer: {
     gap: 8,
@@ -94,5 +97,16 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     position: 'absolute',
+  },
+  cardsLink: {
+    backgroundColor: '#3b82f6',
+    padding: 12,
+    borderRadius: 8,
+    marginTop: 16,
+  },
+  cardsLinkText: {
+    color: 'white',
+    fontWeight: 'bold',
+    fontSize: 16,
   },
 });
