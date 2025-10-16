@@ -34,54 +34,58 @@ export function FeaturedCard({ title, description, emoji, onPress, badge = 'DEST
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: '#3b82f6',
-    borderRadius: 12,
-    padding: 16,
-    margin: 8,
+    backgroundColor: '#BFDBFE', // Azul pastel claro
+    borderRadius: 16,
+    padding: 24,
+    width: '100%',
+    maxWidth: 380,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.2,
+    shadowOpacity: 0.1,
     shadowRadius: 4,
-    elevation: 5,
+    elevation: 3,
   },
   badgeContainer: {
-    backgroundColor: '#2563eb',
-    paddingHorizontal: 8,
-    paddingVertical: 4,
-    borderRadius: 4,
-    alignSelf: 'flex-start',
-    marginBottom: 12,
+    backgroundColor: '#93C5FD', // Azul pastel más oscuro
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderRadius: 8,
+    alignSelf: 'center',
+    marginBottom: 16,
   },
   badgeText: {
-    color: 'white',
+    color: '#1E40AF', // Azul oscuro para contraste
     fontWeight: 'bold',
-    fontSize: 12,
+    fontSize: 14,
   },
   emoji: {
     fontSize: 48,
-    marginBottom: 12,
-    color: 'white',
+    marginBottom: 16,
+    textAlign: 'center',
   },
   title: {
     fontSize: 22,
     fontWeight: 'bold',
-    color: 'white',
+    color: '#1E3A8A', // Azul muy oscuro
     marginBottom: 8,
+    textAlign: 'center',
   },
   description: {
-    color: 'rgba(255,255,255,0.9)',
-    marginBottom: 16,
+    color: '#1E40AF', // Azul oscuro
+    marginBottom: 20,
     fontSize: 16,
-    lineHeight: 22,
+    lineHeight: 24,
+    textAlign: 'center',
   },
   button: {
-    backgroundColor: 'white',
-    padding: 12,
-    borderRadius: 8,
+    backgroundColor: '#60A5FA', // Azul pastel medio
+    padding: 14,
+    borderRadius: 10,
     alignItems: 'center',
   },
   buttonText: {
-    color: '#3b82f6',
+    color: 'white',
     fontWeight: 'bold',
+    fontSize: 16,
   },
 });

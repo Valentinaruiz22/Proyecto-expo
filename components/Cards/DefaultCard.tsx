@@ -29,9 +29,10 @@ export function DefaultCard({ title, description, emoji, onPress }: DefaultCardP
 const styles = StyleSheet.create({
   card: {
     backgroundColor: 'white',
-    borderRadius: 12,
-    padding: 16,
-    margin: 8,
+    borderRadius: 16,
+    padding: 24,
+    width: '100%',
+    maxWidth: 380,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
@@ -40,28 +41,32 @@ const styles = StyleSheet.create({
   },
   emoji: {
     fontSize: 40,
-    marginBottom: 12,
+    marginBottom: 16,
+    textAlign: 'center',
   },
   title: {
     fontSize: 20,
     fontWeight: 'bold',
     marginBottom: 8,
     color: '#111827',
+    textAlign: 'center',
   },
   description: {
     color: '#6b7280',
-    marginBottom: 16,
-    fontSize: 14,
-    lineHeight: 20,
+    marginBottom: 20,
+    fontSize: 15,
+    lineHeight: 22,
+    textAlign: 'center',
   },
   button: {
-    backgroundColor: '#3b82f6',
-    padding: 12,
-    borderRadius: 8,
+    backgroundColor: '#93C5FD', // Azul pastel
+    padding: 14,
+    borderRadius: 10,
     alignItems: 'center',
   },
   buttonText: {
-    color: 'white',
+    color: '#1E40AF', // Azul oscuro para contraste
     fontWeight: 'bold',
+    fontSize: 16,
   },
 });

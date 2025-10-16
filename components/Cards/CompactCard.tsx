@@ -26,35 +26,42 @@ export function CompactCard({ title, description, emoji, onPress }: CompactCardP
 const styles = StyleSheet.create({
   card: {
     backgroundColor: 'white',
-    borderRadius: 8,
-    padding: 12,
-    margin: 8,
+    borderRadius: 12,
+    padding: 16,
+    width: '100%',
+    maxWidth: 380,
     flexDirection: 'row',
     alignItems: 'center',
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 1 },
+    shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
-    shadowRadius: 2,
-    elevation: 2,
+    shadowRadius: 4,
+    elevation: 3,
   },
   emoji: {
-    fontSize: 20,
-    marginRight: 12,
+    fontSize: 24,
+    marginRight: 16,
+    backgroundColor: '#EFF6FF', // Azul pastel muy claro
+    padding: 8,
+    borderRadius: 10,
   },
   content: {
     flex: 1,
+    paddingRight: 8,
   },
   title: {
     fontSize: 16,
     fontWeight: 'bold',
-    color: '#111827',
+    color: '#1E3A8A', // Azul muy oscuro
+    marginBottom: 4,
   },
   description: {
-    color: '#6b7280',
+    color: '#3B82F6', // Azul medio
     fontSize: 14,
   },
   arrow: {
     fontSize: 20,
-    color: '#3b82f6',
+    color: '#60A5FA', // Azul pastel
+    fontWeight: 'bold',
   },
 });
