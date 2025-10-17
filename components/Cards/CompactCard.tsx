@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 type CompactCardProps = {
   title: string;
@@ -10,16 +10,16 @@ type CompactCardProps = {
 
 export function CompactCard({ title, description, emoji, onPress }: CompactCardProps) {
   return (
-    <TouchableOpacity onPress={onPress}>
-      <View style={styles.card}>
-        <Text style={styles.emoji}>{emoji}</Text>
-        <View style={styles.content}>
-          <Text style={styles.title}>{title}</Text>
-          <Text style={styles.description} numberOfLines={1}>{description}</Text>
-        </View>
-        <Text style={styles.arrow}>→</Text>
+    <View style={styles.card}>
+      <Text style={styles.emoji}>{emoji}</Text>
+      <View style={styles.content}>
+        <Text style={styles.title}>{title}</Text>
+        <Text style={styles.description} numberOfLines={1}>{description}</Text>
       </View>
-    </TouchableOpacity>
+      <TouchableOpacity onPress={onPress} style={styles.arrowContainer}>
+        <Text style={styles.arrow}>→</Text>
+      </TouchableOpacity>
+    </View>
   );
 }
 
@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
     padding: 16,
     width: '100%',
     maxWidth: 380,
+    height: 90,
     flexDirection: 'row',
     alignItems: 'center',
     shadowColor: '#000',
@@ -37,20 +38,26 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowRadius: 4,
     elevation: 3,
+    marginBottom: 30,
   },
   emoji: {
-    fontSize: 24,
+    fontSize: 28,
     marginRight: 16,
     backgroundColor: '#EFF6FF', // Azul pastel muy claro
-    padding: 8,
-    borderRadius: 10,
+    padding: 12,
+    borderRadius: 12,
+    width: 52,
+    height: 55,
+    textAlign: 'center',
+    textAlignVertical: 'center',
   },
   content: {
     flex: 1,
     paddingRight: 8,
+    justifyContent: 'center',
   },
   title: {
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: 'bold',
     color: '#1E3A8A', // Azul muy oscuro
     marginBottom: 4,
@@ -63,5 +70,9 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: '#60A5FA', // Azul pastel
     fontWeight: 'bold',
+  },
+  arrowContainer: {
+    padding: 8,
+    marginLeft: 8,
   },
 });

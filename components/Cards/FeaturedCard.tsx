@@ -39,11 +39,13 @@ const styles = StyleSheet.create({
     padding: 24,
     width: '100%',
     maxWidth: 380,
+    minHeight: 250,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
     shadowRadius: 4,
     elevation: 3,
+    justifyContent: 'space-between',
   },
   badgeContainer: {
     backgroundColor: '#93C5FD', // Azul pastel más oscuro

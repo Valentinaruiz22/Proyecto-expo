@@ -12,8 +12,8 @@ export default function CardsScreen() {
   return (
     <ScrollView style={{ flex: 1, backgroundColor: '#f3f4f6' }}>
       {/* Header */}
-      <View style={{ padding: 16, marginBottom: 8, alignItems: 'center' }}>
-        <Text style={{ fontSize: 28, fontWeight: 'bold', color: '#111827', marginBottom: 4 }}>
+      <View style={{ padding: 20, marginBottom: 16, alignItems: 'center' }}>
+        <Text style={{ fontSize: 28, fontWeight: 'bold', color: '#111827', marginBottom: 8 }}>
           Componentes Card
         </Text>
         <Text style={{ fontSize: 16, color: '#6b7280' }}>
@@ -23,11 +23,12 @@ export default function CardsScreen() {
 
       {/* Default Cards Section */}
       <View style={{ 
-        padding: 16,
+        padding: 20,
         alignItems: 'center',
-        maxWidth: 500,
+        maxWidth: 420,
         width: '100%',
-        alignSelf: 'center'
+        alignSelf: 'center',
+        gap: 16
       }}>
         <Text style={{ fontSize: 24, fontWeight: 'bold', marginBottom: 16, alignSelf: 'flex-start' }}>Default Cards</Text>
         <DefaultCard
@@ -46,11 +47,12 @@ export default function CardsScreen() {
 
       {/* Featured Cards Section */}
       <View style={{ 
-        padding: 16,
+        padding: 20,
         alignItems: 'center',
-        maxWidth: 500,
+        maxWidth: 420,
         width: '100%',
-        alignSelf: 'center'
+        alignSelf: 'center',
+        gap: 16
       }}>
         <Text style={{ fontSize: 24, fontWeight: 'bold', marginBottom: 16, alignSelf: 'flex-start' }}>Featured Cards</Text>
         <FeaturedCard
@@ -64,11 +66,12 @@ export default function CardsScreen() {
 
       {/* Compact Cards Section */}
       <View style={{ 
-        padding: 16,
+        padding: 20,
         alignItems: 'center',
-        maxWidth: 500,
+        maxWidth: 420,
         width: '100%',
-        alignSelf: 'center'
+        alignSelf: 'center',
+        gap: 16
       }}>
         <Text style={{ fontSize: 24, fontWeight: 'bold', marginBottom: 16, alignSelf: 'flex-start' }}>Compact Cards</Text>
         <CompactCard

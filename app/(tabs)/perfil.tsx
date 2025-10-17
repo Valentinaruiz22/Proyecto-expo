@@ -1,4 +1,4 @@
-import { Image, SafeAreaView, ScrollView, Text, View, StyleSheet, ViewStyle, TextStyle, ImageStyle } from 'react-native';
+import { Image, ImageStyle, SafeAreaView, ScrollView, StyleSheet, Text, TextStyle, View, ViewStyle } from 'react-native';
 
 export default function PerfilScreen() {
   return (
@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
     height: 120,
     borderRadius: 60,
     borderWidth: 4,
-    borderColor: '#3b82f6',
+    borderColor: '#3faac2ff',
   } as ImageStyle,
 
   name: {

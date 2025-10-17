@@ -1,17 +1,17 @@
 import React from 'react';
 import {
-  View,
-  Text,
-  ScrollView,
   Alert,
   SafeAreaView,
+  ScrollView,
   StyleSheet,
-  ViewStyle,
+  Text,
   TextStyle,
+  View,
+  ViewStyle,
 } from 'react-native';
+import { CompactCard } from '../../components/Cards/CompactCard';
 import { DefaultCard } from '../../components/Cards/DefaultCard';
 import { FeaturedCard } from '../../components/Cards/FeaturedCard';
-import { CompactCard } from '../../components/Cards/CompactCard';
 
 type Styles = {
   container: ViewStyle;

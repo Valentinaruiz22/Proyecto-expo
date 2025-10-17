@@ -33,11 +33,13 @@ const styles = StyleSheet.create({
     padding: 24,
     width: '100%',
     maxWidth: 380,
+    minHeight: 220,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
     shadowRadius: 4,
     elevation: 3,
+    justifyContent: 'space-between',
   },
   emoji: {
     fontSize: 40,

@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import {
-  View,
-  Text,
-  FlatList,
-  TextInput,
   Alert,
+  FlatList,
   SafeAreaView,
   StyleSheet,
-  ViewStyle,
+  Text,
+  TextInput,
   TextStyle,
+  View,
+  ViewStyle,
 } from 'react-native';
 import { ContactCard } from '../../components/ContactCard';
 import { contacts } from '../../data/contacts';
@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
   } as ViewStyle,
 
   header: {
-    backgroundColor: '#3b82f6',
+    backgroundColor: '#79a5edff',
     padding: 16,
     paddingTop: 20,
     width: '100%',
